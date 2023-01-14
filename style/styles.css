@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 1300px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+input,label{
+    display: none;
+}
+
+
+
+/* ------------------------
+    header styles
+    ------------------------ */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.header h3{
+    color: #3A3A3A;
+    margin-left: 120px;
+    font-size: 24px;
+   
+}
+
+.header nav ul{
+    display: flex;
+    margin-right: 120px;
+    list-style-type: none;
+}
+
+.header nav ul li{
+    margin-right: 34px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.header nav ul li:last-child{
+    margin-right: 0px;
+}
+
+/* -------------------------------
+    main styles 
+    ------------------------------- */
+
+    /* styles for start-journey */
+
+.start-journey{
+        display: flex;
+        margin-top: 80px;
+
+    }
+.start-journey .text{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-left: 120px;
+        margin-right: 133px;
+    }
+.start-journey .text h4{
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.start-journey .text .details{
+    font-size: 16px;
+}
+.start-journey .text .prebook{
+    width: 155px;
+    background-color:#E02C6D ;
+    color: white; 
+    padding: 10px 10px;
+    border-radius: 26px;
+}
+
+.start-journey .text .prebook .fa-solid {
+    display: inline;
+}
+
+
+.start-journey .image{
+        margin-right: 100px;
+    }
+
+/* styles for online shop */
+.online-shop-separator{
+    color: rgba(0, 0, 0, 0.199);
+    width: 70%;
+    margin: 0 auto;
+}
+
+.online-shop{
+    
+    margin-top: 10px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 95px;
+}
+.online-shop .first-box{
+    display: flex; 
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.online-shop .second-box{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* styles for each collection */
+.popular-collections{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+.popular-collection-inside{
+    margin-top: 30px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px;
+}
+
+.collection{
+    background-color: white;
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: 10px 10px #e1dcdc40;
+}
+.popular-collections h2{
+    text-align: center;
+}
+.collection-details h3,.price{
+    color: black;
+}
+.collection{
+    margin-left: 10px;
+}
+.collection .collection-image{
+    width: 300px;
+}
+.collection-details {
+    color:  #787885;
+}
+.collection-details h3{
+    font-size: 28px;
+    
+}
+
+.collection-details .price{
+    font-size: 24px;
+    line-height: 36px;
+}
+.ratings{
+    display: flex;
+    gap: 10px;
+}
+
+.collection-details .ratings .rating-stars{
+    color: #FB8200;
+}
+
+.product-details{
+    font-size: 14px;
+}
+
+.see-more{
+   display: flex;
+   margin-top: 50px;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 5px;
+   color: #E02C6DDE;
+}
+
+
+/* styles for joining */
+
+
+.joining{
+    margin-top: 100px;
+    display: flex;
+    gap: 96px;
+    width: 1110px;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.joining img{
+    width: 300px;
+    height: 188px;
+}
+
+.details h4{
+    font-size: 38px;
+    font-weight: 700;
+    color: #0A0826;
+}
+
+.details .description{
+    font-size: 16px;
+    color: #6C6C6C;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+
+.joining .button{
+    background-color: #E02C6D;
+    color: white;
+    width: 120px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* styles for footer */
+
+footer .container{
+    background-color: #0A0826;
+    color: white;
+    margin-top: 100px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
+
+footer .container .authority{
+    font-size: 24px;
+    font-weight: 700px;
+}
+
+footer .container .copyright {
+    font-size: 14px;
+    font-weight: 700px;
+}
+
+
+
+
+.fa-brands{
+    color: white;
+}
+
+
+    /* ------------------------------------
+                     media queries
+        ----------------------------------- */
+
+@media screen and (max-width:576px) {
+    /* header and the others */
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .header h3{
+        font-size: 20px;
+    }
+    .header nav ul{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 10px;
+    }
+    .header nav ul li{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+        width: 70px;
+    }
+    .header nav ul li:last-child{
+        border-bottom: none;
+    }
+    .header h3{
+        margin-left: 10px;
+    }
+
+    /* start journey */
+    .start-journey{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       gap: 15px;
+    }
+    .start-journey .text{
+        margin-left: 10px;
+    }
+    .start-journey .text h4{
+        font-size: 25px;
+    }
+    .start-journey .text .details{
+        font-size: 12px;
+    }
+    .start-journey  .image img{
+        margin-left: 0;
+        width: 400px;
+        height: 400px;
+    }
+
+    /* online shop */
+    .online-shop{
+        margin-top: 10px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+        
+    }
+/* styles for popular collections */
+
+.popular-collection-inside{
+    grid-template-columns: repeat(1,1fr);
+}
+.collection{
+    background-color: white;
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: 10px 10px #e1dcdc40;
+}
+.see-more{
+    display: flex;
+    margin-top: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    color: #E02C6DDE;
+    margin-bottom: 100px;
+ }
+ 
+ /* styles for joining */
+ .joining{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 96px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+
+
+}
