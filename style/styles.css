@@ -276,7 +276,7 @@ footer .container .copyright {
                      media queries
         ----------------------------------- */
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:200px) {
     /* header and the others */
     .header {
         display: flex;
